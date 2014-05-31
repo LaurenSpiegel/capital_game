@@ -1,0 +1,9 @@
+<h1>Wecome to the capitals game!</h1>
+
+<p>What is the capital of <%= @state %>?</p>
+
+<form method='GET' action='make_guess'>
+  <input type='text' name='capital' />
+   <input type='hidden' name='state' value='<%= @state %>' />
+  <input type='submit' value='Make Guess' />
+</form>
